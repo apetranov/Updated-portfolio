@@ -1,220 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexander Petranov</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
-</head>
-<body class="font-[Poppins]">
-    <header style="z-index: 2;" class="bg-white sticky top-0">
-        <nav class="flex justify-between items-center w-[92%] mx-auto">
-            <div class="font-bold text-3xl md:text-base max-w-20">
-                <img style="z-index: 2;" src="images/logo.png" alt="">
-            </div>
-            <div class="nav-links duration-500 md:static md:w-auto md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-1000%] w-full flex items-center px-5">
-                <ul class="flex md:flex-row flex-col flex md:items-center md:gap-[4vw] gap-8">
-                    <li class="underline-link">
-                        <a class="hover:text-cyan-400" href="#section1">Top</a>
-                    </li>
-                    <li class="underline-link">
-                        <a class="hover:text-cyan-400" href="#section2">Skills</a>
-                    </li>
-                    <li class="underline-link">
-                        <a class="hover:text-cyan-400" href="#section3">Projects</a>
-                    </li>
-                    <li class="underline-link">
-                        <a class="hover:text-cyan-400" href="#section4">Connect</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <ion-icon style="z-index: 2;" onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
-            </div>
-        </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png" />
+  </head>
+  <body class="font-[Poppins]">
+    <header style="z-index: 2" class="bg-white sticky top-0">
+      <nav class="flex justify-between items-center w-[92%] mx-auto">
+        <div class="font-bold text-3xl md:text-base max-w-20">
+          <img style="z-index: 2" src="images/logo.png" alt="" />
+        </div>
+        <div
+          class="nav-links duration-500 md:static md:w-auto md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-1000%] w-full flex items-center px-5"
+        >
+          <ul
+            class="flex md:flex-row flex-col flex md:items-center md:gap-[4vw] gap-8"
+          >
+            <li class="underline-link">
+              <a class="hover:text-cyan-400" href="#section1">Top</a>
+            </li>
+            <li class="underline-link">
+              <a class="hover:text-cyan-400" href="#section2">Skills</a>
+            </li>
+            <li class="underline-link">
+              <a class="hover:text-cyan-400" href="#section3">Projects</a>
+            </li>
+            <li class="underline-link">
+              <a class="hover:text-cyan-400" href="#section4">Connect</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <ion-icon
+            style="z-index: 2"
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer md:hidden"
+          ></ion-icon>
+        </div>
+      </nav>
     </header>
 
-    <div id="section1" class="p-5 container flex flex-col md:flex md:flex-row justify-center mx-auto items-center">
-        <div class="md:mr-5 md:text-left text-center mb-5">
-            <h1 class="font-black text-5xl md:text-5xl">Hi, I'm <span id="alex">Alex</span></h1>
-            <p>My name is Alexander Petranov. 
-            I am a second year Software Engineering student
-            from Bulgaria.</p>
-        </div>
-        <div class="image-container">
-            <img id="selfie" src="images/selfie.jpg" class="outline md:max-w-sm max-w-xs rounded-full md:ml-5" alt="">
-        </div>
-        <div class="triangle-image">
-            <img src="images/triangle.png" alt="">
-        </div>
-        <div class="square-image">
-            <img src="images/rounded-black-square-shape.png" alt="">
-        </div>
-        <div class="circle-image">
-            <img src="images/record.png" alt="">
-        </div>
-        <div class="rhombus-image">
-            <img src="images/rhombus.png" alt="">
-        </div>
+    <div
+      id="section1"
+      class="p-5 container flex flex-col md:flex md:flex-row justify-center mx-auto items-center"
+    >
+      <div class="md:mr-5 md:text-left text-center mb-5">
+        <h1 class="font-black text-5xl md:text-5xl">
+          Hi, I'm <span id="alex">Alex</span>
+        </h1>
+        <p>
+          My name is Alexander Petranov. I am a second year Software Engineering
+          student from Bulgaria.
+        </p>
+      </div>
+      <div class="image-container">
+        <img
+          id="selfie"
+          src="images/selfie.jpg"
+          class="outline md:max-w-sm max-w-xs rounded-full md:ml-5"
+          alt=""
+        />
+      </div>
+      <div class="triangle-image">
+        <img src="images/triangle.png" alt="" />
+      </div>
+      <div class="square-image">
+        <img src="images/rounded-black-square-shape.png" alt="" />
+      </div>
+      <div class="circle-image">
+        <img src="images/record.png" alt="" />
+      </div>
+      <div class="rhombus-image">
+        <img src="images/rhombus.png" alt="" />
+      </div>
     </div>
 
-    <div style="z-index: -1;" id="section2" class="m-5 flex justify-center items-center">
-        <div style="z-index: -1;" class="block">
-            <h1 class="text-white text-center font-black text-7xl text-stroke" style="top: 1px;">SKILLS</h1>
-            <div class="m-5 flex justify-center items-center flex-wrap md:flex-nowrap">
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/git.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">Git</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/github.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">GitHub</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/html.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">HTML</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/css.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">CSS</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/python.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">Python</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/django.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">Django</span>
-                </div>
-                <div class="text-center mb-3 mr-5 md:mb-0 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/sql.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">SQL</span>
-                </div>
-                <div class="text-center mb-3 md:mb-0 p-7 drop-shadow">
-                    <img style="display: inline-block;" src="images/js.png" class="max-w-12" alt="">
-                    <br>
-                    <span class="font-bold text-lg">JavaScript</span>
-                </div>
-            </div>
+    <div
+      style="z-index: -1"
+      id="section2"
+      class="m-5 flex justify-center items-center"
+    >
+      <div style="z-index: -1" class="block">
+        <h1
+          class="text-white text-center font-black text-7xl text-stroke"
+          style="top: 1px"
+        >
+          SKILLS
+        </h1>
+        <div
+          class="m-5 flex justify-center items-center flex-wrap md:flex-nowrap"
+        >
+          <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
+            <img
+              style="display: inline-block"
+              src="images/git.png"
+              class="max-w-12"
+              alt=""
+            />
+            <br />
+            <span class="font-bold text-lg">Git</span>
+          </div>
+          <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
+            <img
+              style="display: inline-block"
+              src="images/html.png"
+              class="max-w-12"
+              alt=""
+            />
+            <br />
+            <span class="font-bold text-lg">HTML</span>
+          </div>
+          <div class="text-center mb-3 md:mb-0 mr-5 p-7 drop-shadow">
+            <img
+              style="display: inline-block"
+              src="images/css.png"
+              class="max-w-12"
+              alt=""
+            />
+            <br />
+            <span class="font-bold text-lg">CSS</span>
+          </div>
+          <div class="text-center mr-5 mb-3 md:mb-0 p-7 drop-shadow">
+            <img
+              style="display: inline-block"
+              src="images/js.png"
+              class="max-w-12"
+              alt=""
+            />
+            <br />
+            <span class="font-bold text-lg">JavaScript</span>
+          </div>
+          <div class="text-center mb-3 md:mb-0 p-7 drop-shadow">
+            <img
+              style="display: inline-block"
+              src="images/React.png"
+              class="max-w-12"
+              alt=""
+            />
+            <br />
+            <span class="font-bold text-lg">React</span>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="section3" >
-        <h1 class="text-white text-center font-black text-6xl text-stroke2 m-5">POJECTS</h1>
-            <div class="flex flex-wrap justify-center items-center md:flex-nowrap md:flex-col md:justify-center md:items-center">
-                <div class="w-80 md:w-96 outline m-5 pt-0 shadow-2xl">
-                    <section class="container2">
-                        <div class="slide-wrapper">
-                            <div class="slider">
-                                <img id="slide-1" src="images/project1-1.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-2" src="images/project1-2.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-3" src="images/project1-3.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-4" src="images/project1-4.png" class="max-w-sm mx-auto" alt="">
-                            </div>
-                            <div class="slider-nav">
-                                <a href="#slide-1"></a>
-                                <a href="#slide-2"></a>
-                                <a href="#slide-3"></a>
-                                <a href="#slide-4"></a>
-                            </div>
-                        </div>
-                    </section>
-                    <h1 class="text-center font-semibold text-xl">Instagram Clone</h1>
-                    <br>
-                    <p class="text-center pb-2">A fullstack instagram clone web app built with flask. 
-                        Users can create accounts, upload posts with pictures and delete them.
-                    </p>
-                    <br>
-                    <p class="text-center font-semibold pb-5 hover:underline">
-                        <a  href="https://www.youtube.com/watch?v=fkOSPRHyO3M" target="_blank">Video Demo</a>
-                    </p>
-                    
-                </div>
-                <div class="w-80 md:w-96 outline m-5 pt-0 shadow-2xl">
-                    <section class="container2">
-                        <div class="slide-wrapper">
-                            <div class="slider">    
-                                <img id="slide-21" src="images/project2-1.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-22" src="images/project2-2.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-23" src="images/project2-3.png" class="max-w-sm mx-auto" alt="">
-                            </div>
-                            <div class="slider-nav">
-                                <a href="#slide-21"></a>
-                                <a href="#slide-22"></a>
-                                <a href="#slide-23"></a>
-                            </div>
-                        </div>
-                    </section>
-                    <h1 class="text-center font-semibold text-xl">Auctions Website</h1>
-                    <br>
-                    <p class="text-center pb-2">A fullstack auctions website built with Django.
-                        Users can create new auction listings with a price and picture.
-                        Users can bid on each item and the highest bid wins. Users can also comment on listings.
-                    </p>
-                    <br>
-                    <p class="text-center font-semibold pb-5 hover:underline">
-                        <a  href="https://www.youtube.com/watch?v=o-gqyOwh_Q8" target="_blank">Video Demo</a>
-                    </p>
-                </div>
-                <div class="w-80 md:w-96 outline m-5 pt-0 shadow-2xl">
-                    <section class="container2">
-                        <div class="slide-wrapper">
-                            <div class="slider">    
-                                <img id="slide-31" src="images/project3-1.png" class="max-w-sm mx-auto" alt="">
-                                <img id="slide-32" src="images/project3-2.png" class="max-w-sm mx-auto" alt="">
-                            </div>
-                            <div class="slider-nav">
-                                <a href="#slide-31"></a>
-                                <a href="#slide-32"></a>
-                            </div>
-                        </div>
-                    </section>
-                    <h1 class="text-center font-semibold text-xl">Inspirational Quote Generator</h1>
-                    <br>
-                    <p class="text-center pb-2">A website which generates random inspirational quotes
-                        from an API.
-                    </p>
-                    <br>
-                    <p class="text-center font-semibold pb-5 hover:underline">
-                        <a  href="https://inspo-quote-generator.netlify.app/" target="_blank">Live Link</a>
-                    </p>
-                </div>
-            </div>
+    <div id="section3">
+      <h1 class="text-white text-center font-black text-6xl text-stroke2 m-5">
+        POJECTS
+      </h1>
+      <div
+        class="flex flex-wrap justify-center items-center md:flex-nowrap md:flex-col md:justify-center md:items-center"
+      >
+        <div class="w-2/4 md:w-2/4 p-5 outline m-5 pt-0 shadow-2xl">
+          <img src="images/Blogverse2.png" class="w-full mx-auto" alt="" />
+          <h1 class="text-center font-semibold text-xl">BlogVerse</h1>
+          <br />
+          <p class="text-center pb-2">
+            A fully responsive fullstack blog application built with Next.js,
+            Firebase and Tailwind CSS. Users can create blogs, customize them,
+            delete them and comment on blogs.
+          </p>
+          <br />
+          <p class="text-center font-semibold pb-5 hover:underline">
+            <a href="https://blogverse-gilt.vercel.app" target="_blank"
+              >Project link</a
+            >
+          </p>
         </div>
-        <h1 id="section4" class="m-10 text-center font-bold hover:underline text-4xl"><a href="mailto:shasho68.5@gmail.com">Click here to write me an email!</a></h1>
+        <div class="w-2/4 md:w-2/4 p-5 outline m-5 pt-0 shadow-2xl">
+          <img src="images/todolist.png" class="w-full mx-auto" alt="" />
+
+          <h1 class="text-center font-semibold text-xl">To do list</h1>
+          <br />
+          <p class="text-center pb-2">
+            A to do list application built with React and Tailwind CSS.
+          </p>
+          <br />
+          <p class="text-center font-semibold pb-5 hover:underline">
+            <a href="https://todolist-three-blond.vercel.app" target="_blank"
+              >Project link</a
+            >
+          </p>
+        </div>
+        <div class="w-2/4 md:w-2/4 p-5 outline m-5 pt-0 shadow-2xl">
+          <img src="images/project3-2.png" class="w-full mx-auto" alt="" />
+
+          <h1 class="text-center font-semibold text-xl">
+            Inspirational Quote Generator
+          </h1>
+          <br />
+          <p class="text-center pb-2">
+            A website which generates random inspirational quotes from an API.
+          </p>
+          <br />
+          <p class="text-center font-semibold pb-5 hover:underline">
+            <a href="https://inspo-quote-generator.netlify.app/" target="_blank"
+              >Project Link</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1
+      id="section4"
+      class="m-10 text-center font-bold hover:underline text-4xl"
+    >
+      <a href="mailto:shasho68.5@gmail.com">Click here to write me an email!</a>
+    </h1>
     <script>
-        const navLinks = document.querySelector('.nav-links');
-        const imageContainer = document.querySelector('.image-container');
-        function onToggleMenu(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu';
-            navLinks.classList.toggle('top-[9%]');
-        }
+      const navLinks = document.querySelector(".nav-links");
+      const imageContainer = document.querySelector(".image-container");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
 
-        // Get all the links inside the nav-links container
-        const links = document.querySelectorAll('.nav-links a');
-        const ion = document.querySelector('ion-icon');
-        // Add an event listener to each link
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                // Remove the class that opens the menu
-                navLinks.classList.remove('top-[9%]');
-                ion.name = 'menu';
-            });
+      // Get all the links inside the nav-links container
+      const links = document.querySelectorAll(".nav-links a");
+      const ion = document.querySelector("ion-icon");
+      // Add an event listener to each link
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          // Remove the class that opens the menu
+          navLinks.classList.remove("top-[9%]");
+          ion.name = "menu";
         });
+      });
     </script>
-</body>
+  </body>
 </html>
